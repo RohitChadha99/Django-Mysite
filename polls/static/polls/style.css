@@ -1,0 +1,7 @@
+li a {
+    color: brown;
+    font-size: xx-large;
+}
+body {
+    background: white url("https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTU4fHxiYWNrZ3JvdW5kJTIwZm9yJTIwd2Vic2l0ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1300&q=60") no-repeat;
+}
