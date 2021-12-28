@@ -1,0 +1,11 @@
+{% extends 'user/index.html' %}
+{% block body %}
+<div class="card text-white bg-dark m-5 " style="max-width: 100rem;">
+    <div class="card-header">Hello {{name}}</div>
+    <div class="card-body">
+      <h5 class="card-title">your email :- {{email}}</h5>
+      <p class="card-text"> </p>
+    </div>
+  </div>
+  <a class="btn btn-danger ms-5 px-3 py-2" href="{% url 'handlesignout' %}" role="button">Sign-out</a>
+{% endblock body %}

@@ -19,6 +19,7 @@ from django.urls.conf import include
 
 urlpatterns = [
     path('polls/',include('polls.urls')),
+    path('home/',include('user.urls')),
     path('admin/', admin.site.urls),
     
 ]

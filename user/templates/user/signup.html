@@ -1,0 +1,53 @@
+{% extends 'user/index.html' %}
+
+{% block div %}
+<ul class="navbar-nav">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="/home">Sign-in</a>
+  </li>
+</ul>
+</div>
+{% endblock div %}
+{% block body %}
+<div class="container mt-4">
+  <div class="row">
+    <div class="col">
+    </div>
+    <div class="col-8">
+      <form class="row g-3 mx-5" action='{% url 'handlesignup' %}' method='post'>
+        {% csrf_token %}
+        <div class="col-md-10">
+            <label  class="form-label">User Name</label>
+            <input type="text" class="form-control" name="username" placeholder="Enter User name" required>
+          </div>
+        <div class="col-md-10">
+            <label  class="form-label">First Name</label>
+            <input type="text" class="form-control" name="fname" placeholder="Enter first name" required>
+          </div>
+        <div class="col-md-10">
+            <label  class="form-label">Last Name</label>
+            <input type="text" class="form-control" name="lname" placeholder="Enter last name" required>
+        </div>
+        <div class="col-md-10">
+          <label  class="form-label">Email</label>
+          <input type="email" class="form-control" name="email" placeholder="Enter email < xyz@gmail.com >" required >
+        </div>
+        <div class="col-md-10">
+          <label  class="form-label">Password</label>
+          <input type="password" class="form-control" name="pass1" placeholder="Enter password" required>
+        </div>
+        <div class="col-md-10">
+            <label  class="form-label">Re enter Password</label>
+            <input type="password" class="form-control" name="pass2" placeholder="Enter password again" required>
+          </div>
+
+        <div class="col-10">
+          <button type="submit" class="btn btn-primary mb-5 mt-2">Sign up</button>
+        </div>
+      </form>
+    </div>
+    <div class="col">
+    </div>
+  </div>
+</div>
+{% endblock body %}
